@@ -1,5 +1,4 @@
 import mongoose, { Document, Schema } from 'mongoose';
-// import  IUser  from './userModel';  // Import the IUser interface
 
 interface IFormData extends Document {
   category: string;

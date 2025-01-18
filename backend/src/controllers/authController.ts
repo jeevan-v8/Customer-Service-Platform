@@ -1,15 +1,3 @@
-// import { Request, Response } from 'express';
-
-// export const googleLogin = async (req: Request, res: Response): Promise<void> => {
-//     try {
-//         // Your login logic goes here
-//         res.status(200).send({ message: 'Login successful' });
-//     } catch (err) {
-//         console.error('Error during Google login:', err);
-//         res.status(500).send({ error: 'Internal Server Error' });
-//     }
-// };
-
 import UserModel from '../models/userModel'; // Corrected the import path
 import { oauth2Client } from '../utils/googleConfig'; // Corrected the import path
 import axios from 'axios';

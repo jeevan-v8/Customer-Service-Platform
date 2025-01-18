@@ -1,38 +1,3 @@
-// import express, { Router, Request, Response } from 'express';
-// // import the form model 
-// import { FormData } from '../models/formModel';
-
-// const router: Router = express.Router();
-
-// // POST route to save form data
-// router.post('/services', async (req , res) => {
-//     try{
-//         const data = await FormData.create(req.body);
-//         res.status(200).json(data);
-//     }catch(err){
-//         console.log('Failed due to ',err);
-//         res.status(500).json({message : 'server error'})
-//     }
-// })
-
-
-// router.get('/services', async (req, res) => {
-//     try {
-//         const { category, email } = req.query; // Get the category and email from query params
-//         // Find documents based on both category and email
-//         const data = await FormData.find({ category, email });
-//         res.status(200).json(data); // Return the data
-//     } catch (err) {
-//         console.error(err); // Log the error for debugging purposes
-//         res.status(500).json({ message: 'Server error' });
-//     }
-// });
-
-
-
-
-// export default router;
-
 import express, { Router } from "express";
 import { FormData } from "../models/formModel";
 import intercomAPI from "../utils/interCom"; // Import Intercom config

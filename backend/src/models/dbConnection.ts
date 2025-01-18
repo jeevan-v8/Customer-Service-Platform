@@ -13,17 +13,3 @@ const connectDB = async (): Promise<void> => {
 };
 
 export default connectDB;
-
-// import mongoose from 'mongoose';
-
-// // Ensure process.env.DB_URL is a string (asserting it will be present)
-// const DB_URL = process.env.DB_URL as string;
-
-// mongoose
-//     .connect(DB_URL)
-//     .then(() => {
-//         console.log('MongoDB is connected....');
-//     })
-//     .catch((err: Error) => {
-//         console.error('Error while MongoDB connection...', err);
-//     });
