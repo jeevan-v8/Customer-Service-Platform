@@ -36,6 +36,10 @@ The frontend is built with **React** and **Tailwind CSS**. It allows users to:
 - Axios
 - Typescript  
 
+## Project Structure
+
+### Frontend (React)
+```
 frontend/
 │
 ├── public/                  # Static files like index.html, images, etc.
@@ -49,6 +53,13 @@ frontend/
 │
 ├── tailwind.config.js       # Tailwind CSS configuration
 └── package.json             # Frontend dependencies
+```
+
+- **Frontend**
+  - LoginPage.tsx: Handles user login through Google OAuth.
+  - Dashboard.tsx: Displays the queries based on categories.
+  - QueryForm.tsx: A form to submit new queries with category and comments.
+  - IntercomWidget.tsx: Embeds the Intercom widget into the frontend for real-time support.
 
 
 ## Backend  
@@ -82,7 +93,10 @@ GOOGLE_CLIENT_ID=your_google_client_id
 GOOGLE_CLIENT_SECRET=your_google_client_secret
 INTERCOM_ACCESS_TOKEN=your_intercom_access_token
 ```
+## Project Structure
 
+### Backend (Node)
+```
 backend/
 │
 ├── controllers/             # Controllers for handling logic (e.g., AuthController, QueryController)
@@ -94,6 +108,13 @@ backend/
 ├── app.js                   # Express app setup
 └── package.json             # Backend dependencies
 
+```
+
+- **Backend**
+ - authRoutes.js: API routes for handling Google OAuth authentication.
+ - queryRoutes.js: API routes for submitting and retrieving queries.
+ - QueryController.js: Handles the logic of saving and displaying queries.
+ - IntercomService.js: Manages communication with the Intercom API for user-agent interaction.
 
 ## Features  
 
@@ -106,6 +127,7 @@ backend/
 
 - **Intercom Integration**:  
   - Automatically create tickets and sync user data with the Intercom platform.  
+
 
 ## Technologies Used  
 
@@ -127,6 +149,15 @@ backend/
 - **Methods**:  
   - **POST**: Save a new customer request.  
   - **GET**: Retrieve requests by category and email. 
+
+- **Post Request**
+```
+{
+  "category": "product",
+  "comment": "I need help with my order"
+}
+
+```
 
 ## Contact
 If you have any questions or feedback, feel free to reach out to me:
