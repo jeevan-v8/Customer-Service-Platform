@@ -36,6 +36,21 @@ The frontend is built with **React** and **Tailwind CSS**. It allows users to:
 - Axios
 - Typescript  
 
+frontend/
+│
+├── public/                  # Static files like index.html, images, etc.
+│
+├── src/                     # Main source code directory
+│   ├── components/          # Reusable components (e.g., Navbar, QueryForm)
+│   ├── pages/               # React pages (e.g., Dashboard, Login, etc.)
+│   ├── services/            # API services (e.g., AuthService, QueryService)
+│   ├── App.tsx              # Main entry point for React app
+│   ├── index.tsx            # React rendering entry point
+│
+├── tailwind.config.js       # Tailwind CSS configuration
+└── package.json             # Frontend dependencies
+
+
 ## Backend  
 
 The backend handles the core server-side functionalities, including user authentication, form submission APIs, and integration with Intercom for customer support. Built with **Node.js**, **Express.js**, and **MongoDB**, it ensures seamless communication between the frontend and external APIs.  
@@ -67,6 +82,18 @@ GOOGLE_CLIENT_ID=your_google_client_id
 GOOGLE_CLIENT_SECRET=your_google_client_secret
 INTERCOM_ACCESS_TOKEN=your_intercom_access_token
 ```
+
+backend/
+│
+├── controllers/             # Controllers for handling logic (e.g., AuthController, QueryController)
+├── routes/                  # API routes (e.g., authRoutes, queryRoutes)
+├── models/                  # Mongoose models for MongoDB (e.g., User, Query)
+├── services/                # External services (e.g., IntercomService)
+├── utils/                   # Utility functions (e.g., JWT utility)
+├── .env                     # Environment variables
+├── app.js                   # Express app setup
+└── package.json             # Backend dependencies
+
 
 ## Features  
 
