@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import CustomerServiceForm from "../components/customerserviceform";
-import IntercomInitializer from "../components/intercomMessenger";
+import CustomerServiceForm from "./customerserviceform";
+import IntercomInitializer from "./intercomMessenger";
 
 interface UserInfo {
   name: string;

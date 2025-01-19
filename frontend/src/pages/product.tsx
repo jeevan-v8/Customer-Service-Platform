@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import Layout from "./layout";
+import Layout from "../components/layout";
 
 interface QueryData {
   comment: string;
-  createdAt: string; // Time is expected in ISO 8601 format from the backend
+  createdAt: string;
 }
 
 const ProductRelated: React.FC = () => {
