@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 interface QueryData {
   comment: string;
   createdAt: string;
+  category : string;
 }
 
 const Dashboard: React.FC = () => {
@@ -55,11 +56,12 @@ const Dashboard: React.FC = () => {
           <div className="space-y-4">
             {queries.map((query, index) => (
               <div key={index} className="p-4 bg-white shadow rounded-lg border">
-                <p className="text-lg text-gray-700">{query.comment}</p>
-                <p className="text-sm text-gray-500 mt-2">
-                  {new Date(query.createdAt).toLocaleString()}{" "}
-                  {/* Formats the timestamp */}
-                </p>
+                <div className="flex justify-between items-center">
+                  <p className="text-base text-gray-700"> Query : {query.comment}</p>
+                  <p className="text-sm text-gray-500">
+                    {new Date(query.createdAt).toLocaleString()}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
