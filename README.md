@@ -61,7 +61,7 @@ The backend enables:
    ```
 ### Create a .env file in the root of the project with the following variables
 ```bash
-PORT=4000
+PORT=8080
 MONGO_URI=your_mongodb_connection_string
 GOOGLE_CLIENT_ID=your_google_client_id
 GOOGLE_CLIENT_SECRET=your_google_client_secret
