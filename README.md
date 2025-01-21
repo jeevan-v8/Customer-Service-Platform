@@ -109,16 +109,15 @@ backend/
 ├── services/                # External services (e.g., IntercomService)
 ├── utils/                   # Utility functions (e.g., JWT utility)
 ├── .env                     # Environment variables
-├── app.js                   # Express app setup
+├── app.ts                   # Express app setup
 └── package.json             # Backend dependencies
 
 ```
 
 - **Backend**
- - authRoutes.js: API routes for handling Google OAuth authentication.
- - queryRoutes.js: API routes for submitting and retrieving queries.
- - QueryController.js: Handles the logic of saving and displaying queries.
- - IntercomService.js: Manages communication with the Intercom API for user-agent interaction.
+ - authRoutes.ts: API routes for handling Google OAuth authentication.
+ - queryRoutes.ts: API routes for submitting and retrieving queries.
+ - IntercomService.ts: Manages communication with the Intercom API for user-agent interaction.
 
 ## Features  
 
@@ -149,7 +148,7 @@ backend/
 - **Description**: Initiates Google OAuth login flow.  
 
 ### 2. Customer Requests  
-- **Route**: `/services`  
+- **Route**: `/auth/services`  
 - **Methods**:  
   - **POST**: Save a new customer request.  
   - **GET**: Retrieve requests by category and email. 
