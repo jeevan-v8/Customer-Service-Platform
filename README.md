@@ -7,6 +7,7 @@ A web application for managing customer requests and providing real-time support
 
 # Demo
 
+https://github.com/user-attachments/assets/557f18c8-af48-4785-890b-3bc0361a58e0
 
 ## Frontend
 
